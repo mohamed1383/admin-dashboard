@@ -1,0 +1,139 @@
+@font-face {
+    font-family: poppins-regular;
+    src: url("../../../public/fonts/PoppinsLatin-Regular.ttf");
+}
+
+
+.dashboard{
+    width: 1420px;
+    height: 86%;
+    position: absolute;
+    top: 100px;
+    left: 111%;
+    overflow-y: auto;
+}
+
+.size2{
+    width: 1270px
+}
+
+.data-box-icon{
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.data-boxes{
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    gap: 120px;
+}
+
+.data-box{
+    width: 230px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 0 5px 0 #cacaca;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.text1{
+    font-family: poppins-regular;
+    color: #22285E;
+    font-size: 18px;
+}
+
+.text2{
+    font-family: poppins-medium;
+    color: #7A7E9E;
+    font-size: 12px;
+}
+
+.container{
+    width: 424px;
+    height: 124px;
+    position: relative;
+    border-radius: 8px;
+    background-color: #9E4BDC;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.title-box{
+    width: 234px;
+    font-size: 20px;
+    font-family: poppins-medium;
+    margin-left: 20px;
+    color: #FFF;
+}
+
+.measage-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.measege{
+    width: 227px;
+    font-size: 12px;
+    font-family: poppins-regular;
+    color: #fff;
+}
+
+.btn{
+    width: 107px;
+    height: 37px;
+    border-radius: 8px;
+    border: none;
+    font-size: 12px;
+    font-family: poppins-regular;
+    color: #9E4BDC;
+    cursor: pointer;
+}
+
+.Rectangle{
+    position: absolute;
+    width: 136px;
+    height: 110px;
+    z-index: 1;
+    background-color: #BE78F0;
+}
+
+.Rectangle1{
+    transform: rotate(45deg);
+    bottom: -50px;
+    right: -50px;
+    border-radius: 6px;
+}
+
+.Rectangle2{
+    top: -40px;
+    right: -55px;
+    transform: rotate(45deg);
+    border-radius: 6px;
+}
+
+.Rectangle3{
+    bottom: -64px;
+    right: 40px;
+    transform: rotate(45deg);
+    border-radius: 6px;
+}
+
+
+
