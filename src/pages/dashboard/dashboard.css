@@ -104,6 +104,7 @@
     font-family: poppins-regular;
     color: #9E4BDC;
     cursor: pointer;
+    z-index: 2;
 }
 
 .Rectangle{
