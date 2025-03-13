@@ -136,5 +136,9 @@
     border-radius: 6px;
 }
 
-
-
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 60px;
+}
