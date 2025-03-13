@@ -2,6 +2,7 @@ import React from 'react'
 import './dashboard.css'
 import DataBox from '../../components/databox'
 import MeasageBox from '../../components/measage-box'
+import ClientStatisticChart from '../../components/chart'
 
 const dataBoxes = [
   {id: 1,text1: 'NOTIFICATION' , text2: '6 Unread Notifications' ,textColor: false,iconName: false, iconBackgroundColor: '#BE78F0', iconColor: '#fff', backgroundColor: '#fff'},
@@ -19,6 +20,7 @@ export default function Dashboard({size2}) {
         ))}
       </div>
         <MeasageBox></MeasageBox>
+        <ClientStatisticChart></ClientStatisticChart>
     </div>
   )
 }
