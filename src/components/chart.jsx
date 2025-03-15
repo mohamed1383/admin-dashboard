@@ -53,7 +53,7 @@ const ClientStatisticChart = () => {
   };
 
   return (
-    <div style={{width: "700px" , position: "absolute",top: "24.5%", right: "8%" , marginLeft: "30px"}} className="w-full p-6 bg-white rounded-lg shadow-md">
+    <div style={{width: "700px" , position: "absolute",top: "24.5%", right: "6.8%" , marginLeft: "30px"}} className="w-full p-6 bg-white rounded-lg shadow-md">
 
       <svg style={{display: "none"}}>
 
@@ -75,7 +75,7 @@ const ClientStatisticChart = () => {
         <div style={{display: "flex"}} className="flex gap-8 mb-4">
           {["US", "UK", "France"].map((country, index) => (
             <div
-              style={{width: "58px" , height: "28px" , border: "1px solid #F0F0F0", textAlign: "center" , lineHeight: "28px" , cursor: "pointer"}}
+              style={{width: "58px" , height: "28px" , border: "1px solid #F0F0F0", textAlign: "center" , lineHeight: "28px" , cursor: "pointer",fontFamily: "poppins-regular", fontSize: "14px"}}
               key={index}
               id={`${country == 'France' ? 'border-radius2' : ''}${country == 'US' ? 'border-radius' : ''}`}
               className={`px-4 py-1 rounded-lg ${toggleButton[country][0] ? toggleButton[country][1] : ''} ${
