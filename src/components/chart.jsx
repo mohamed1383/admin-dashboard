@@ -31,8 +31,22 @@ const CustomDot = (props) => {
 
 const ClientStatisticChart = () => {
   const [selectedCountries, setSelectedCountries] = useState(["US", "UK", "France"]);
+  const [toggleButton,setToggle] = useState({
+    US: [true,'toggle1'],
+    UK: [true,'toggle2'],
+    France: [true,'toggle3']
+  })
 
   const toggleCountry = (country) => {
+
+    setToggle((prev) => {
+
+      console.log(prev[country])
+
+      prev[country][0] ? prev[country][0] = false : prev[country][0] = true
+      return prev
+    })
+
     setSelectedCountries((prev) =>
       prev.includes(country) ? prev.filter((c) => c !== country) : [...prev, country]
     );
@@ -56,14 +70,15 @@ const ClientStatisticChart = () => {
       </svg>
       
       <div className="title-container">
-        <h2 style={{fontFamily: "poppins-regular"}} className="text-lg font-semibold mb-4">Client Statistic</h2>
+        <h2 style={{fontFamily: "poppins-regular" , fontSize: "18px"}} className="text-lg font-semibold mb-4">Client Statistic</h2>
         
         <div style={{display: "flex"}} className="flex gap-8 mb-4">
           {["US", "UK", "France"].map((country, index) => (
             <div
-              style={{width: "58px" , height: "28px"}}
+              style={{width: "58px" , height: "28px" , border: "1px solid #F0F0F0", textAlign: "center" , lineHeight: "28px" , cursor: "pointer"}}
               key={index}
-              className={`px-4 py-1 rounded-lg ${
+              id={`${country == 'France' ? 'border-radius2' : ''}${country == 'US' ? 'border-radius' : ''}`}
+              className={`px-4 py-1 rounded-lg ${toggleButton[country][0] ? toggleButton[country][1] : ''} ${
                 selectedCountries.includes(country)
                   ? "bg-purple-500 text-white"
                   : "bg-gray-200 text-black"
