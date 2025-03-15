@@ -103,6 +103,7 @@
     font-size: 12px;
     font-family: poppins-regular;
     color: #9E4BDC;
+    background-color: white;
     cursor: pointer;
     z-index: 2;
 }
@@ -175,4 +176,20 @@
     color: #FFF;
     font-family: poppins-regular;
     font-size: 14px;
+}
+
+.circle-chart1{
+    position: absolute;
+    width: 263px;
+    height: 353px;
+    top: 79%;
+    right: 7%;
+    box-shadow: 0 0 5px 0 #bbbbbb;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.chart-title{
+    box-sizing: border-box;
+    padding: 20px;
 }
