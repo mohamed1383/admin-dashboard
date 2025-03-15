@@ -142,3 +142,37 @@
     box-sizing: border-box;
     padding-left: 60px;
 }
+
+#border-radius{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#border-radius2{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.toggle1{
+    background-color: #9E4BDC;
+    color: #fff;
+    border: none;
+    font-family: poppins-regular;
+    font-size: 14px;
+}
+
+.toggle2{
+    background-color: #22285E;
+    border: none;
+    color: #fff;    
+    font-family: poppins-regular;
+    font-size: 14px;
+}
+
+.toggle3{
+    background-color: #457B9D;
+    border: none;
+    color: #FFF;
+    font-family: poppins-regular;
+    font-size: 14px;
+}
