@@ -4,6 +4,7 @@ import DataBox from '../../components/databox'
 import MeasageBox from '../../components/measage-box'
 import ClientStatisticChart from '../../components/chart'
 import CircleChart from '../../components/circleChart'
+import CircleChart2 from '../../components/circleChart2'
 
 const dataBoxes = [
   {id: 1,text1: 'NOTIFICATION' , text2: '6 Unread Notifications' ,textColor: false,iconName: false, iconBackgroundColor: '#BE78F0', iconColor: '#fff', backgroundColor: '#fff'},
@@ -23,6 +24,7 @@ export default function Dashboard({size2}) {
         <MeasageBox></MeasageBox>
         <ClientStatisticChart></ClientStatisticChart>
         <CircleChart/>
+        <CircleChart2/>
     </div>
   )
 }
